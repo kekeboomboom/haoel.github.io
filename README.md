@@ -252,7 +252,7 @@ sudo docker run -d --name gost \
 >    PASS="password"
 >    PORT=443
 >    AUTH=$(echo -n ${USER}:${PASS} | base64)
->   
+>      
 >    BIND_IP=0.0.0.0
 >    CERT_DIR=/etc/letsencrypt
 >    CERT=${CERT_DIR}/live/${DOMAIN}/fullchain.pem
@@ -607,7 +607,7 @@ iPhone 上的客户端我推荐使用下面这两个（需要付费）,这两个
 
 美国的手机号目前最好的方式是购买 [Ultra Mobile 的 PayGo](https://www.ultramobile.com/zh/paygo/) 月租 3 美金，你可以上淘宝上购买。这个卡是真实的美国手机号码，在中国漫游时，短信和接听电脑会产生漫游费用，所以，你一定要[开启 WiFi Calling](https://www.ultramobile.com/zh/ufaqs/%E5%A6%82%E4%BD%95%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E8%AE%BE%E7%BD%AEwifi%E9%80%9A%E8%AF%9D%E5%92%8C%E7%9F%AD%E4%BF%A1/)。有时候，你的网络可能无法让你开启 WiFi Calling，这个可能是运营上 block 了相关路由，你可能需要设置你的路由器，这里[有篇文章](https://zhuanlan.zhihu.com/p/411052451)你可以了解一下.
 
-
+这里不推荐使用 [Google Voice](https://voice.google.com)。 因为你注册 Google Voice 的时候也需要一个实体卡，如果你有朋友在美国的话，你可以借用朋友的手机帮你生成一个，但是就算是生成了，美国也有很多 APP 无法接收 Google Voice 的验证码，因为风控的问题不支持虚拟运营商。
 
 #### 5.1.1 Ultra mobile
 
@@ -617,7 +617,8 @@ Ultra Mobile 这个手机卡，我买的时候是让其他人给我激活的，�
 
 
 
-这里不推荐使用 [Google Voice](https://voice.google.com)。 因为你注册 Google Voice 的时候也需要一个实体卡，如果你有朋友在美国的话，你可以借用朋友的手机帮你生成一个，但是就算是生成了，美国也有很多 APP 无法接收 Google Voice 的验证码，因为风控的问题不支持虚拟运营商。
+> WiFi calling
+> 我用的是小米 14大陆版，小米手机拨号输入 \*#\*#869434#\*#\* 可以开启WiFi通话功能
 
 
 
